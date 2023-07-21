@@ -1,0 +1,7 @@
+.main-container {
+  @apply bg-gray-900 w-screen min-h-screen px-8 grid place-items-center;
+}
+
+.inner-container {
+  @apply w-full;
+}
