@@ -1,19 +1,19 @@
 <main class="main-container">
   <div class="inner-container">
-    <div class="timer-jumbotron">
-      <h1 class="text-white text-6xl text-center">Next year will be in</h1>
-    </div>
+    <!-- <div class="timer-jumbotron"> -->
+    <!--   <h1 class="text-white text-6xl text-center">Next year will be in</h1> -->
+    <!-- </div> -->
     <div class="flex justify-between mb-1">
-      <span class="text-base font-medium text-blue-700 dark:text-white"
-        >This year progress</span
+      <span class="text-xl font-medium text-blue-700 dark:text-white"
+        >Progress of {{ getThisYear() }}</span
       >
-      <span class="text-sm font-medium text-blue-700 dark:text-white">{{
-        progress()
-      }}</span>
+      <span class="text-xl font-medium text-blue-700 dark:text-white"
+        >{{ progress() }}%</span
+      >
     </div>
-    <div class="w-full bg-gray-200 rounded-full h-6 dark:bg-gray-700">
+    <div class="w-full bg-gray-200 rounded-full h-8 dark:bg-gray-700">
       <div
-        class="bg-blue-600 h-6 rounded-full"
+        class="bg-blue-600 h-8 rounded-full"
         style="width: {{ progress() }}%"
       ></div>
     </div>

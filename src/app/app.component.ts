@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { initFlowbite } from 'flowbite';
 import { interval, map } from 'rxjs';
 import { CountDownServiceService } from './services/count-down-service.service';
+import * as dayjs from 'dayjs';
 
 @Component({
   selector: 'app-root',
@@ -20,5 +21,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     initFlowbite();
+  }
+
+  getThisYear(): number {
+    return dayjs().year();
   }
 }
