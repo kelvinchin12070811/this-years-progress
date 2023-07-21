@@ -1,8 +1,9 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { CommonModule } from '@angular/common';
 import { initFlowbite } from 'flowbite';
 import { interval, map } from 'rxjs';
+import { CountDownServiceService } from './services/count-down-service.service';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +13,10 @@ import { interval, map } from 'rxjs';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  countDownService = inject(CountDownServiceService);
+
   title = "This Year's Progress";
-  progress = signal(0);
+  progress = toSignal(this.countDownService.getProgress());
 
   ngOnInit(): void {
     initFlowbite();

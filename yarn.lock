@@ -3656,6 +3656,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dayjs@npm:^1.11.9":
+  version: 1.11.9
+  resolution: "dayjs@npm:1.11.9"
+  checksum: a4844d83dc87f921348bb9b1b93af851c51e6f71fa259604809cfe1b49d1230e6b0212dab44d1cb01994c096ad3a77ea1cf18fa55154da6efcc9d3610526ac38
+  languageName: node
+  linkType: hard
+
 "debug@npm:2.6.9":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -8072,6 +8079,7 @@ __metadata:
     "@angular/platform-browser-dynamic": ^16.1.0
     "@angular/router": ^16.1.0
     "@types/jasmine": ~4.3.0
+    dayjs: ^1.11.9
     flowbite: ^1.7.0
     jasmine-core: ~4.6.0
     karma: ~6.4.0
