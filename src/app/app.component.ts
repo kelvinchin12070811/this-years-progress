@@ -5,11 +5,12 @@ import { initFlowbite } from 'flowbite';
 import { interval, map } from 'rxjs';
 import { CountDownServiceService } from './services/count-down-service.service';
 import * as dayjs from 'dayjs';
+import { ProgressBarComponent } from './components/flowbite/progress-bar/progress-bar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ProgressBarComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

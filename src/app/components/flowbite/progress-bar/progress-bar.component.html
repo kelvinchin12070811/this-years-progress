@@ -1,0 +1,30 @@
+<div [ngClass]="['flex', 'justify-between', 'mb-1']">
+  <span
+    [ngClass]="['text-xl', 'font-medium', 'text-blue-700', 'dark:text-white']"
+    >{{ leftLabel }}</span
+  >
+  <span
+    [ngClass]="['text-xl', 'font-medium', 'text-blue-700', 'dark:text-white']"
+    >{{ progress }}%</span
+  >
+</div>
+<div
+  [ngClass]="[
+    'w-full',
+    'h-8',
+    'bg-gray-200',
+    'rounded-full',
+    'dark:bg-gray-700'
+  ]"
+>
+  <div
+    [ngClass]="[
+      'h-8',
+      'bg-blue-600',
+      'rounded-full',
+      'dark:bg-blue-500',
+      'duration-[1500ms]'
+    ]"
+    style="width: {{ progress }}%"
+  ></div>
+</div>
